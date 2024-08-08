@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 22px;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+/* header nav goes here */
+
+.header {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 0.01px solid #555;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header nav ul li {
+    list-style: none;
+    font-size: 22px;
+}
+
+/* for photo upload */
+.profile-pic input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* profile-suggestion-section goes here */
+.profile-suggestion-section {
+    padding: 5px 0;
+    background-color: #FAFAFA;
+}
+
+.profile-suggestion {
+    height: 100px;
+    width: 100%;
+    background-color: #FAFAFA;
+    padding: 20px 20px;
+}
+
+.profile-pic {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-suggestion-section .name {
+    font-size: 12px;
+    filter: contrast(20);
+}
+
+
+/* profile-suggestion-section end here */
+
+
+/* posts goes here */
+.post{
+    display: none;
+    z-index: 1;
+}
+
+.posts {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.post-profile {
+    height: 35px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    width: 90%;
+    height: 30px;
+    padding: 6px 10px;
+}
+
+.moreOptions {
+    display: flex;
+    font-size: 17px;
+    padding: 0 12px;
+}
+
+.post-footer-section {
+    width: 100%;
+    height: 135px;
+    padding: 0 16px;
+}
+
+.icon-section{
+    display: flex;
+}
+.icon{
+    display: flex;
+    width: 50%;
+}
+
+.icon .like-icon, .comment-icon, .share-icon, .bookMark-icon{
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    font-size: 26px;
+    
+}
+
+.bookMark-icon{
+   display: flex;
+   justify-content: flex-end;
+    width: 50%;
+}
+
+.like-count{
+    font-size: 14px;
+}
+
+.bio{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin: 8px 0 0 0;
+}
+
+.time{
+    font-size: 12px;
+}
+/* post end here */
+
+/* like */
+.red-heart{
+    color: red;
+}
+
+.userpostcont{
+    display: none;
+    z-index: -1;
+    height: 250px;
+    width: 70%;
+    background-color: #f7f7f7;
+    margin: 70px auto 0;
+    border-radius: 8px;
+}
+.upload{
+    padding: 20px;
+    display: grid;
+}
+.photo-btn{
+    height: 25px;
+    width: 100%;
+    border: 0.1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+label{
+    margin: 10px 0 10px 0;
+}
+.post-btn{
+    width: 100%;
+    height: 25px;
+margin-top: 70px;
+background-color: rgb(85, 167, 221);
+border-radius: 4px;
+}
+#text{
+    text-align: start;
+    height: 40px;
+    width: 100%;
+    background-color: #FAFAFA;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

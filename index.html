@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar goes here -->
+    <nav class="navbar">
+      <ul>
+        <li><i class="fa-solid fa-house" aria-label="Home"></i></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li class="userpost"><i class="fa-solid fa-square-plus"></i></li>
+        <li><i class="fa-solid fa-film"></i></li>
+        <li><i class="fa-regular fa-circle-user"></i></li>
+      </ul>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- header navbar goes here -->
+
+    <div class="header">
+      <div class="logo">Chat App</div>
+      <nav>
+        <ul>
+          <li><i class="fa-regular fa-heart"></i></li>
+          <li><i class="fa-brands fa-facebook-messenger"></i></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- header navbar end here -->
+
+    <!-- profile-suggestion goes here -->
+
+    <div class="profile-suggestion-section">
+      <div class="profile-suggestion">
+        <div class="profiles">
+          <div class="profile-pic">
+            <img src="user.jpg" alt="" />
+          </div>
+          <!-- <i class="fa-solid fa-plus"></i> -->
+          <div class="name">your story</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile-suggestion end here -->
+
+    <!-- post goes here -->
+     <div class="post">
+    <div class="posts">
+      <div class="post-profile"><img src="user.jpg" width="100%" height="100%" alt="user" class="post-pro"/></div>
+      <div class="userName"><p></p></div>
+
+      <div class="moreOptions"><i class="fas fa-regular fa-ellipsis"></i></div>
+    </div>
+
+    <div class="post-photo-section">
+      <img src="" alt="" width="100%" height="auto"  class="image"/>
+    </div>
+
+    <div class="post-footer-section">
+      <div class="icon-section">
+      <div class="icon">
+        <div class="like-icon">
+        <i class="fa-regular fa-heart" id="heartIcon"></i>
+      </div>
+      <div class="comment-icon">
+        <i class="fa-regular fa-comment fa-flip-horizontal"></i>
+      </div>
+
+      <div class="share-icon">
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+
+      </div>
+
+      <div class="bookMark-icon">
+        <i class="fa-regular fa-bookmark"></i>
+      </div>
+    </div>
+
+    <div class="like-count">
+      <p>0 likes</p>
+    </div>
+
+    <div class="bio">
+      <p></p>
+    </div>
+
+   <div class="time">
+    <p>1 sec ago</p>
+   </div>
+
+    </div>
+    </div>
+</div>
+
+<div class="userpostcont">
+  <div class="upload">
+    <p>Bio*</p>
+    <input type="text" accept="text" name="" id="text" placeholder="bio">
+    <input type="file" accept="image/*" id="first" class="img" style="display: none;">
+    <label for="first"><butto class="photo-btn">upload photo</button></label>
+      <button class="post-btn">post</button>
+    </div>
+  </div>
+
+    <!-- post end here -->
+    <script src="script.js"></script>
+  </body>
+</html>
